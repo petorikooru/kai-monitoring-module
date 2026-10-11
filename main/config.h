@@ -13,8 +13,8 @@
 #define ETH_INT_GPIO    7
 #define ETH_RST_GPIO    6
 #define TCH_IRQ_GPIO    16
-#define TTL_TX_GPIO     19
-#define TTL_RX_GPIO     20
+#define TTL_TX_GPIO     20
+#define TTL_RX_GPIO     19
 #define I2C_SCL         13
 #define I2C_SDA         12
 #define LCD_RST         3

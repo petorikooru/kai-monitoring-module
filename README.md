@@ -1,7 +1,5 @@
 # KAI Monitoring Device
 
----
-
 This is a repository for Monitoring Device. Built using ESP-IDF v6 Framework.
 
 ## External Dependencies

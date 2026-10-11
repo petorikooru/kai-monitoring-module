@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "mouse-bite.pretty-main") (type "KiCad") (uri "/home/archylia/Documents/programming_stuff/embedded/kai_monitoring/hardware/mouse-bite.pretty-main") (options "") (descr ""))
+)
