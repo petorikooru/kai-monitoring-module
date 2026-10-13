@@ -2763,9 +2763,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
@@ -2773,7 +2777,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2782,8 +2786,8 @@
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2814,7 +2818,7 @@
 					)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2836,7 +2840,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2847,9 +2851,9 @@
 					)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -2857,6 +2861,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -4602,6 +4626,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 41.91) (xy 267.97 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03ba638f-3e31-4c09-828f-3f49b087fcbf")
+	)
+	(wire
+		(pts
 			(xy 33.02 48.26) (xy 45.72 48.26)
 		)
 		(stroke
@@ -4689,16 +4723,6 @@
 			(type default)
 		)
 		(uuid "0de76d81-5147-400b-af8a-a7f906d1b8e9")
-	)
-	(wire
-		(pts
-			(xy 129.54 128.27) (xy 140.97 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fbb8d9d-8e1b-49a4-b8a6-e44d5054c46b")
 	)
 	(wire
 		(pts
@@ -4872,6 +4896,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 46.99) (xy 267.97 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25f2ead8-2044-4231-93c6-455957793485")
+	)
+	(wire
+		(pts
 			(xy 168.91 49.53) (xy 180.34 49.53)
 		)
 		(stroke
@@ -4882,13 +4916,33 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 120.65) (xy 140.97 120.65)
+			(xy 231.14 44.45) (xy 267.97 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "325db28a-94e2-4eff-ab6a-f5e4f2488e3f")
+		(uuid "32b079cb-a770-4783-8891-454d75eb2619")
+	)
+	(wire
+		(pts
+			(xy 231.14 29.21) (xy 267.97 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3506ca86-4910-4a34-aef5-c5c77caf7a37")
+	)
+	(wire
+		(pts
+			(xy 231.14 21.59) (xy 267.97 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36a10fb1-fb5e-48e8-86ea-797f013a8d0b")
 	)
 	(wire
 		(pts
@@ -4909,6 +4963,16 @@
 			(type default)
 		)
 		(uuid "3af98171-42b0-4e97-8157-fc63d3416507")
+	)
+	(wire
+		(pts
+			(xy 231.14 49.53) (xy 267.97 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b6cfca8-5e4e-4d71-9569-c411e80cb539")
 	)
 	(wire
 		(pts
@@ -5062,6 +5126,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 24.13) (xy 267.97 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f66020-f012-4a67-8e29-d4b9b71b82aa")
+	)
+	(wire
+		(pts
 			(xy 124.46 26.67) (xy 135.89 26.67)
 		)
 		(stroke
@@ -5089,16 +5163,6 @@
 			(type default)
 		)
 		(uuid "5e05f0c0-4a9a-480d-903a-74a6d57984bb")
-	)
-	(wire
-		(pts
-			(xy 129.54 130.81) (xy 140.97 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e668294-c007-4725-ab92-dfe53f59e99d")
 	)
 	(wire
 		(pts
@@ -5492,6 +5556,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 31.75) (xy 267.97 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a24caf24-c67b-4ba4-b854-1838d7ca3e61")
+	)
+	(wire
+		(pts
 			(xy 54.61 129.54) (xy 91.44 129.54)
 		)
 		(stroke
@@ -5532,6 +5606,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 19.05) (xy 267.97 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8d617e3-17d4-4b6d-adae-ecbc37559112")
+	)
+	(wire
+		(pts
 			(xy 168.91 123.19) (xy 182.88 123.19)
 		)
 		(stroke
@@ -5549,6 +5633,16 @@
 			(type default)
 		)
 		(uuid "ac9ca0a4-91e9-4da4-83e3-4bbd68f0952c")
+	)
+	(wire
+		(pts
+			(xy 231.14 36.83) (xy 267.97 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adf5783d-0ffe-4f68-aa65-c988e2962084")
 	)
 	(wire
 		(pts
@@ -5589,6 +5683,16 @@
 			(type default)
 		)
 		(uuid "b5f3707b-52ef-4b46-a035-f514275d8a92")
+	)
+	(wire
+		(pts
+			(xy 231.14 26.67) (xy 267.97 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b884756e-4168-4ae6-a2c0-b6b1d432515a")
 	)
 	(wire
 		(pts
@@ -5639,16 +5743,6 @@
 			(type default)
 		)
 		(uuid "bed36c4d-69f4-436b-94c9-ea8c571f0d81")
-	)
-	(wire
-		(pts
-			(xy 124.46 118.11) (xy 140.97 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf03878c-bce5-498c-a757-6c3960a052e0")
 	)
 	(wire
 		(pts
@@ -5772,6 +5866,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 39.37) (xy 267.97 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e23dda9a-3243-42e1-8c3d-42ad42588c97")
+	)
+	(wire
+		(pts
 			(xy 33.02 60.96) (xy 45.72 60.96)
 		)
 		(stroke
@@ -5789,16 +5893,6 @@
 			(type default)
 		)
 		(uuid "e3f16dc9-bd55-4c61-b44b-c5f61e58002b")
-	)
-	(wire
-		(pts
-			(xy 127 123.19) (xy 140.97 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4eb43a8-7c74-4bf4-8634-7447370a97ef")
 	)
 	(wire
 		(pts
@@ -5882,16 +5976,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 125.73) (xy 140.97 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef4193a1-a73a-4a9d-b5c1-e5f196935fac")
-	)
-	(wire
-		(pts
 			(xy 175.26 39.37) (xy 175.26 41.91)
 		)
 		(stroke
@@ -5919,6 +6003,16 @@
 			(type default)
 		)
 		(uuid "f33b8dd4-28ae-4d49-9445-56618fee4cc3")
+	)
+	(wire
+		(pts
+			(xy 231.14 34.29) (xy 267.97 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3c11e55-6681-45e8-82de-ad42be105af8")
 	)
 	(wire
 		(pts
@@ -5959,6 +6053,16 @@
 			(type default)
 		)
 		(uuid "fb95a3c9-011d-46f6-9113-070f2882d5a8")
+	)
+	(wire
+		(pts
+			(xy 231.14 52.07) (xy 267.97 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc37fca5-58ff-441c-8ccc-2530c8a517e9")
 	)
 	(wire
 		(pts
@@ -6020,16 +6124,6 @@
 		)
 		(uuid "0760ecb0-5fd8-474e-8e84-2ae4410d880e")
 	)
-	(label "SPI3 MISO"
-		(at 129.54 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0c93cc74-5d6e-4d02-8436-bafc1950ef88")
-	)
 	(label "RST W5500"
 		(at 33.02 58.42 0)
 		(effects
@@ -6069,16 +6163,6 @@
 			(justify left bottom)
 		)
 		(uuid "17876bc5-3095-4ab4-8e97-3004981bf7fa")
-	)
-	(label "SPI3 SCK"
-		(at 129.54 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1e98f95a-3da1-4821-a4e3-8701cba3bfdc")
 	)
 	(label "CS LCD"
 		(at 168.91 62.23 0)
@@ -6190,16 +6274,6 @@
 		)
 		(uuid "441e5171-1dec-4829-8d14-0e0915ca75a8")
 	)
-	(label "CS Additional"
-		(at 127 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "44fb6560-4380-4483-afdf-1869c120af42")
-	)
 	(label "I2C SDA"
 		(at 127 105.41 0)
 		(effects
@@ -6249,16 +6323,6 @@
 			(justify left bottom)
 		)
 		(uuid "5aa6c0e3-4133-4605-9390-83b9dbdd502c")
-	)
-	(label "SPI3 MOSI"
-		(at 129.54 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6245d235-6839-4bcf-897a-1968f0f461e8")
 	)
 	(label "UNUSED 2"
 		(at 168.91 125.73 0)
@@ -6981,40 +7045,41 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 124.46 120.65 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 152.4 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "119a6ed4-dd3c-4cf2-8732-7e83785ff02c")
-		(property "Reference" "#PWR021"
-			(at 124.46 127 0)
-			(hide yes)
+		(uuid "1eacd74e-5044-4455-85ae-964470d6b85f")
+		(property "Reference" "H2"
+			(at 154.94 170.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 124.46 125.73 0)
+		(property "Value" "MountingHole_Pad"
+			(at 154.94 172.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 120.65 0)
+			(at 152.4 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7025,7 +7090,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 120.65 0)
+			(at 152.4 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7035,8 +7100,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 120.65 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 152.4 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7047,20 +7112,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "74954bce-d0ed-43c1-9613-d48a558537fd")
+			(uuid "f318ecea-ecd0-4ea6-866e-d75630ad9610")
 		)
 		(instances
 			(project "kai_monitoring"
 				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
-					(reference "#PWR021")
+					(reference "H2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 129.54 182.88 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 152.4 186.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7069,9 +7134,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1ae13a64-90fc-4c31-ab3f-5744a3f52048")
-		(property "Reference" "H3"
-			(at 132.08 181.6099 0)
+		(uuid "1f500f3e-f1d7-4979-a32c-f1982a61aa40")
+		(property "Reference" "H4"
+			(at 154.94 184.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7081,8 +7146,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 132.08 184.1499 0)
+		(property "Value" "MountingHole_Pad"
+			(at 154.94 186.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7092,8 +7157,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 129.54 182.88 0)
+		(property "Footprint" ""
+			(at 152.4 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7104,7 +7169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 182.88 0)
+			(at 152.4 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7114,8 +7179,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 129.54 182.88 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 152.4 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7124,87 +7189,14 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "188e205c-5827-477b-9c8d-a55778c9f893")
 		)
 		(instances
 			(project "kai_monitoring"
 				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 129.54 175.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e96aabf-35f6-4a2a-b105-eb4d20ffc177")
-		(property "Reference" "H1"
-			(at 132.08 173.9899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 132.08 176.5299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 129.54 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 129.54 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "kai_monitoring"
-				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
-					(reference "H1")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -7893,6 +7885,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 129.54 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39660444-599d-4f90-8933-5d1e3fd7c80f")
+		(property "Reference" "#PWR031"
+			(at 129.54 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c4bacb3a-4c14-4c72-903c-d431cd185102")
+		)
+		(instances
+			(project "kai_monitoring"
+				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
 		(at 140.97 66.04 0)
 		(unit 1)
@@ -7975,6 +8045,84 @@
 			(project "kai_monitoring"
 				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 189.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c76f5e2-e35c-4fd0-b9b7-58eead555088")
+		(property "Reference" "#PWR033"
+			(at 129.54 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ab5eaf1-587d-4fb8-b7e2-6b8b52956c5f")
+		)
+		(instances
+			(project "kai_monitoring"
+				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -8209,6 +8357,124 @@
 			(project "kai_monitoring"
 				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x14_Socket")
+		(at 273.05 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "542c2c6a-3a34-4f00-a425-e5d02c1992f3")
+		(property "Reference" "J18"
+			(at 274.32 34.2899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FPC 14 Pin 1 mm"
+			(at 274.32 36.8299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_FFC-FPC:Molex_200528-0140_1x14-1MP_P1.00mm_Horizontal"
+			(at 273.05 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x14, script generated"
+			(at 273.05 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "83946259-28da-4e04-9139-e0d8335b3c5d")
+		)
+		(pin "8"
+			(uuid "63fe51c3-5483-4ef0-9722-e8a37e301a4b")
+		)
+		(pin "3"
+			(uuid "e1d05db9-9903-420b-9d7d-4725f46306e2")
+		)
+		(pin "1"
+			(uuid "9cc13d41-f4fe-4b32-ac77-e190b84920ed")
+		)
+		(pin "13"
+			(uuid "d70af9d5-3000-4183-9ba4-30b1bbda6cdc")
+		)
+		(pin "9"
+			(uuid "b31bdf44-7dfe-4243-aeaf-7e8582e36bbf")
+		)
+		(pin "10"
+			(uuid "f8cb4243-53bd-4bfb-accd-b0d9ce1a4519")
+		)
+		(pin "4"
+			(uuid "dfd6e797-fcd0-4739-9dc4-8a62a0f8b348")
+		)
+		(pin "11"
+			(uuid "0445ca32-a4cd-46a5-845c-781f95bb5129")
+		)
+		(pin "2"
+			(uuid "fc93d6e2-7cd1-45d4-8f20-9b3973a2bd47")
+		)
+		(pin "5"
+			(uuid "a316dadb-f79a-4c0c-8875-7ec3b69ed48b")
+		)
+		(pin "6"
+			(uuid "6eb32a32-66f4-47ef-ba25-3cb9985e206f")
+		)
+		(pin "14"
+			(uuid "61242767-9332-4ace-abbf-f76ab06134ec")
+		)
+		(pin "12"
+			(uuid "62633a92-5f5d-4737-8641-d346d60603d3")
+		)
+		(instances
+			(project "kai_monitoring"
+				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -8531,178 +8797,6 @@
 			(project "kai_monitoring"
 				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
 					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x06_Socket")
-		(at 146.05 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ed156f2-20f5-4e1c-9708-84a452aead31")
-		(property "Reference" "J10"
-			(at 147.32 123.1899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SPI Additional"
-			(at 147.32 125.7299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
-			(at 146.05 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 146.05 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "c7859404-4afa-48da-87e9-117b2d57b8d6")
-		)
-		(pin "2"
-			(uuid "f14cc05b-e113-4446-9d75-d2ae870e50ef")
-		)
-		(pin "4"
-			(uuid "51878db0-f47f-43b4-b613-740b20ad3089")
-		)
-		(pin "1"
-			(uuid "2c7d761e-c6da-491b-a803-fe0a1c6b7d5c")
-		)
-		(pin "5"
-			(uuid "e9e07cdd-feff-4eec-8d68-6249c4912d15")
-		)
-		(pin "6"
-			(uuid "9ad24292-90eb-4f33-96d0-ea8942e4bb1f")
-		)
-		(instances
-			(project "kai_monitoring"
-				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
-					(reference "J10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 124.46 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f414e0e-b2b1-4eca-9d90-7cfc58779b48")
-		(property "Reference" "#PWR022"
-			(at 124.46 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 124.46 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 124.46 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "57325ffd-5ce9-40dc-9c01-c4812c89b57f")
-		)
-		(instances
-			(project "kai_monitoring"
-				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
-					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -9644,6 +9738,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 152.4 189.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f725818-9684-42ca-ac86-3c9a9af50b64")
+		(property "Reference" "#PWR034"
+			(at 152.4 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.4 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cafdccb4-a1be-4220-9695-de5a1e9f0e4a")
+		)
+		(instances
+			(project "kai_monitoring"
+				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 124.46 63.5 0)
 		(unit 1)
@@ -9841,6 +10013,163 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 152.4 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a667f563-64c0-4456-bf54-adac158e81ae")
+		(property "Reference" "#PWR032"
+			(at 152.4 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.4 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8af3efa3-1984-4827-8159-6c7c02e4868e")
+		)
+		(instances
+			(project "kai_monitoring"
+				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 129.54 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab0a371e-fd09-4546-987e-8839f6ba40e0")
+		(property "Reference" "H1"
+			(at 132.08 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 132.08 172.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 129.54 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "771cb807-8b9c-4b1b-a623-fa3877f93ac0")
+		)
+		(instances
+			(project "kai_monitoring"
+				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 110.49 185.42 0)
 		(unit 1)
 		(body_style 1)
@@ -9996,6 +10325,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 129.54 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b308d1c0-2d51-45d1-9acc-c44049a33cc9")
+		(property "Reference" "H3"
+			(at 132.08 184.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 132.08 186.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 129.54 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "321ab653-d48c-4b88-b5bc-c742e94c71ea")
+		)
+		(instances
+			(project "kai_monitoring"
+				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
 		(at 140.97 82.55 0)
 		(unit 1)
@@ -10078,82 +10486,6 @@
 			(project "kai_monitoring"
 				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
 					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 149.86 175.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba934a23-efb3-4133-89ab-aa44ca4e8b52")
-		(property "Reference" "H2"
-			(at 152.4 173.9899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 152.4 176.5299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 149.86 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 149.86 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "kai_monitoring"
-				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
-					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -10984,82 +11316,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 149.86 182.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ebb18888-2642-4a0b-941a-c8063aa2c974")
-		(property "Reference" "H4"
-			(at 152.4 181.6099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 152.4 184.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 149.86 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 149.86 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "kai_monitoring"
-				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 124.46 48.26 0)
 		(unit 1)
@@ -11247,6 +11503,121 @@
 			(project "kai_monitoring"
 				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
 					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x14_Socket")
+		(at 226.06 36.83 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f2a8713a-7212-460b-b895-07c843ff7229")
+		(property "Reference" "J17"
+			(at 222.504 34.544 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LCD 2.54 mm Pin"
+			(at 215.392 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical"
+			(at 226.06 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x14, script generated"
+			(at 226.06 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "100a6ff6-60dc-4532-a0b9-00b6da5d8b38")
+		)
+		(pin "3"
+			(uuid "1b8aa2f6-34a9-446d-98e3-c444e5aa2af4")
+		)
+		(pin "4"
+			(uuid "28be28d5-16d5-4d1d-a1de-ad2a7b69efff")
+		)
+		(pin "1"
+			(uuid "ce57cd9e-65ec-4e29-a443-0bab5a062018")
+		)
+		(pin "6"
+			(uuid "b7c14f62-1d63-47ac-ad30-c4340f5f0c86")
+		)
+		(pin "5"
+			(uuid "4b6ca588-8dcc-4c06-9992-1f33b86ea909")
+		)
+		(pin "14"
+			(uuid "8f565494-f721-4a5a-b25d-837774b4b451")
+		)
+		(pin "13"
+			(uuid "99bd6b30-1dd9-4aad-8bdf-500642ca3933")
+		)
+		(pin "12"
+			(uuid "34fe27b7-50c8-4c76-89c6-c7fbc9550e1a")
+		)
+		(pin "11"
+			(uuid "39907d1c-9ffa-4989-94cc-39bf8d7481d1")
+		)
+		(pin "10"
+			(uuid "45bf9442-1370-4e23-b33a-dc819449daf9")
+		)
+		(pin "9"
+			(uuid "b862e484-162c-42aa-b0c4-1f5bb13f21ab")
+		)
+		(pin "8"
+			(uuid "c843212a-41e3-4247-a3df-f8b798ee5030")
+		)
+		(pin "7"
+			(uuid "14f75518-8fc0-4768-a9e5-5931231e03d6")
+		)
+		(instances
+			(project "kai_monitoring"
+				(path "/7143ca7a-2a6d-4055-9d88-01c48c042573"
+					(reference "J17")
 					(unit 1)
 				)
 			)
